@@ -1,10 +1,11 @@
 lis=["password1@","aal123","qwert345","wdnmk2#","fnjfnr234@"]
-a=input("Enter your password : ")
+pass=input("Enter your password : ")
 
 for i in lis:
-    if i==a:
+    if i==pass:
         print("Passsword match")
-        print(f"The password is {a}")
+        print(f"The password is {pass}")
         break
 else:
-    print("Password not match")
+    lis.append(pass)
+    print(lis)
